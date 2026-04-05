@@ -2,15 +2,6 @@
   "name": "mmcore-fs",
   "version": "0.0.1",
   "description": "Common Library for mFront and mapend",
-  "type": "module",
-  "main": "./src/index.js",
-  "exports": {
-    ".": "./src/index.js"
-  },
-  "files": [
-    "src"
-  ],
-  "sideEffects": false,
   "scripts": {
     "setup-project": "node src/setup-project.js"
   },
@@ -33,6 +24,15 @@
   "bugs": {
     "url": "https://github.com/banglafighter/mmcore-fs/issues"
   },
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "sideEffects": false,
   "packageManager": "pnpm@10.28.2",
   "keywords": [
     "mmcore",

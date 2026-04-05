@@ -13,3 +13,11 @@ export function loadYmlFromFile(location, error = "YML file not found!") {
     const ymlContent = readFileContent(location, error)
     return loadYml(ymlContent)
 }
+
+export function loadYmlConfig(location, defaultConfig = {}) {
+    try {
+        return loadYmlFromFile(location)
+    } catch (e) { // ignore
+    }
+    return defaultConfig
+}

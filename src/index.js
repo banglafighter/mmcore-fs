@@ -1,5 +1,9 @@
-import {loadYmlFromFile} from "./utils/sdlize.js";
+import {loadYmlFromFile, loadYmlConfig} from "./utils/sdlize.js";
+import {joinPath, getCommandRoot} from "./utils/file-system.js";
 
 export {
-    loadYmlFromFile
+    loadYmlFromFile,
+    loadYmlConfig,
+    joinPath,
+    getCommandRoot
 }
