@@ -15,9 +15,9 @@ export function fileExist(location){
     return fs.existsSync(location);
 }
 
-export function readFileContent(location) {
+export function readFileContent(location, error = "File does not exist") {
     if (!fileExist(location)) {
-        throw new Error("File does not exist: " + location);
+        throw new Error(`${error} : ${location}`);
     }
     return fs.readFileSync(location, "utf8")
 }
