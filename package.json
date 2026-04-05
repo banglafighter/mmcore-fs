@@ -2,20 +2,29 @@
   "name": "mmcore-fs",
   "version": "0.0.1",
   "description": "Common Library for mFront and mapend",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "setup-project": "node src/setup-project.js"
+  },
   "dependencies": {
     "chalk": "^5.6.2",
     "commander": "^14.0.3",
     "js-yaml": "^4.1.1",
     "p-map": "^7.0.4"
   },
-  "license": "Apache-2.0",
-  "main": "src/index.ts",
-  "module": "src/index.ts",
-  "types": "src/index.ts",
   "author": {
     "name": "Bangla Fighter",
     "url": "https://banglafighter.org"
   },
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/banglafighter/mmcore-fs"
@@ -25,39 +34,12 @@
     "url": "https://github.com/banglafighter/mmcore-fs/issues"
   },
   "packageManager": "pnpm@10.28.2",
-  "exports": {
-    ".": {
-      "import": "./src/index.ts",
-      "types": "./src/index.ts",
-      "default": "./src/index.ts"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "sideEffects": false,
-  "publishConfig": {
-    "access": "public",
-    "main": "./dist/index.js",
-    "module": "./dist/index.mjs",
-    "types": "./dist/index.d.ts",
-    "exports": {
-      ".": {
-        "import": "./dist/index.mjs",
-        "require": "./dist/index.js",
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.mjs"
-      }
-    }
-  },
   "keywords": [
-    "mmcore-fs",
-    "mweb",
-    "maintainable",
-    "react",
-    "frontend",
-    "framework",
-    "router",
-    "mapend"
+    "mmcore",
+    "fs",
+    "monorepo",
+    "git",
+    "automation",
+    "cli"
   ]
 }
